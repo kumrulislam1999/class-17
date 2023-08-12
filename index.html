@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Start Adding CSS link Here -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- End Adding CSS link Here -->
+    <!--Start Adding JavaScript -->
+
+    <!--End Adding JavaScript -->
+    <!-- Start Adding Enternal JavaScript code -->
+    <script>
+        function myFunc() {
+            document.getElementById('demo11').innerHTML = 'this paragraph has been changed by click in button';
+        }
+    </script>
+    <!-- End Adding Enternal JavaScript code -->
+
+</head>
+
+<body>
+    <h1>Introduction of JavaScript</h1>
+    <h2>My First JavaScript</h2>
+    <p id=" demo1"></p>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML = Date()">Click me to display Date and
+        Time.</button>
+
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo2">JavaScript can change HTML Content.</p>
+    <button type="button" onclick="document.getElementById('demo2').innerHTML = `Hellow JavaScript!`">Click
+        Me!</button>
+
+    <h2>Javascript Accept both double and single quotes:</h2>
+    <p id="demo3">JavaScript accept both double and single quotes:</p>
+    <button type="button" onclick='document.getElementById("demo3").innerHTML = "Hello JavaScript!"'>Click me</button>
+
+    <h2>JavaScript Can Change HTML Attribute.</h2>
+    <p id="demo4">In this Example Change the "Type" attribute of Input tag</p>
+    <button onclick="document.getElementById('demo5').type ='text'">Show PassWord</button><br><br>
+    <input type="password" id="demo5" value="123456"><br><br>
+    <button onclick="document.getElementById('demo5').type ='password'">Hide PassWord</button>
+
+    <p>In this Example Change the "src" attribute of Img tag.</p>
+    <button type="button" onclick="document.getElementById('demo6').src = './image/pic_bulbon.gif'">Turn on the
+        light</button>
+    <img id="demo6" src="./image/pic_bulboff.gif" alt="" width="100">
+    <button type="button" onclick="document.getElementById('demo6').src = './image/pic_bulboff.gif'">turn Off The
+        light</button>
+
+    <h2>JavaScript Can Change HTMl Styles (CSS)</h2>
+    <p>Changing The style of an HTML element, is a variant of changing an HTML attribute:</p>
+    <p id="demo7">JavaScript can change the style of an Html element.</p>
+    <button type="button" onclick="document.getElementById('demo7').style.fontSize = '35px'"> Click Me! </button>
+
+    <p id="demo8">JavaScript Can Change HTML Style Property. example:- font-size, Color, </p>
+    <button type="button" onclick="document.getElementById('demo8').style.color = 'green'">Click
+        Me!</button>
+
+
+    <h2>JavaScript Can Hide HTML Elements.</h2>
+    <p id="demo9">Hiding HTML elements can be done by changing the display style:</p>
+    <button type="button" onclick="document.getElementById('demo9').style.display = 'none'">Click Me!</button>
+
+    <h1>Where You can Use or add JavaScript to</h1>
+    <h2>Use The javaScript in HTML Body.</h2>
+    <p id="demo10"></p>
+    <script>
+        document.getElementById('demo10').innerHTML = "My First JavaScript";
+
+    </script>
+
+    <h2>YOU and use javaScript in Head section by script section .</h2>
+    <p id="demo11">Use javaScript code in head section.</p>
+    <button type="button" onclick="myFunc()">Click Here</button>
+
+
+    <h2>to access an HTML Element, JavaScript can use the document.getElementById('id-name') method</h2>
+    <br><br>
+    <p id="demo12"></p>
+
+    <h2>For testing purpose, it is convenient to use document.wirte()</h2>
+    <p id="demo13"></p>
+    <script>
+
+        document.write(5 + 6);
+    </script>
+    <script>
+
+    </script>
+    <button onclick="window.print()">Print THis page</button>
+    <h2>JavaScript Statement are compose of value, operator, expression, keyword and comment.</h2>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <h2>JavaScript Line Break is a good place after operator;</h2>
+    <p id="demo17"></p>
+    <h2>JavaScript Code Blocks </h2>
+    <p>JavaScript statement can be grouped together in code blocks, inside curly brackets {} </p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <button type="button" onclick="myFunction()">Click here</button>
+    <h2>Fixed or Literals value</h2>
+    <h4>literals value with with decimals;</h4>
+    <p id="demo20"></p>
+    <h4>literals value without decimals</h4>
+    <p id="demo21"></p>
+    <h2>String Value</h2>
+    <h4>string is written in single quotation.</h4>
+    <p id="demo22"></p>
+    <h4>string is written in double quotation.</h4>
+    <p id="demo23"></p>
+
+    <h2>Variable declaring and assingnning a value for that variable.</h2>
+    <p id="demo24"></p>
+    <button type="button" onclick="d_variable()">click here to see the value of x</button>
+    <script type="text/javaScript" src="./javascript/active.js"></script>
+</body>
+
+</html>
